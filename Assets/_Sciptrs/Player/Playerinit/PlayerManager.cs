@@ -53,7 +53,7 @@ namespace MyGame
 
         private void OnDestroy()
         {
-            Kill();
+            DisableAll();
         }
         public void Init()
         {
@@ -105,8 +105,7 @@ namespace MyGame
             if (EnableScoreAdding)
                 _scoreAdder?.Enable();
         }
-
-        private void Kill()
+        public void DisableAll()
         {
             _movement?.StopMovement();
             _movement?.DisableMovement();
@@ -116,6 +115,10 @@ namespace MyGame
             _healer?.Disable();
             _damager?.Disable();
             _scoreAdder?.Disable();
+        }
+        private void Kill()
+        {
+            DisableAll();
             OnDeath?.Invoke(this);
             _playerView.Disable();
             Debug.Log("Player Died");
