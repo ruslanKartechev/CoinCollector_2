@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389fdd07fa764d8469829ed2c34fe066, type: 3}
+  m_Name: Map_1
+  m_EditorClassIdentifier: 
+  CenterPosition: {x: 0, y: 0, z: 0}
+  Width: 20
+  Length: 20
+  FloorY: 0
+  EnemySpawns:
+  - Position: {x: -4.74, y: 0, z: -8.03}
+    Radius: 5
+  - Position: {x: 5.65, y: 0, z: 0}
+    Radius: 6
